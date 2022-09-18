@@ -12,8 +12,10 @@ python _juci.py %*
 
 :SUCCEEDED
 echo *SUCCEEDED*
-exit
+goto EOF
 
 :FAILED
 echo *FAILED*
-exit
+goto EOF
+
+:EOF
