@@ -43,8 +43,8 @@ class Worker:
         current_system = platform.system()
         if current_system == 'Windows':
             return WindowsWorker(args)
-        if current_system == 'Darwin':
-            return MacWorker(args)
+        # if current_system == 'Darwin':
+        #     return MacWorker(args)
 
         raise NotImplementedError(f'Unsupported platform: {current_system}!')
 

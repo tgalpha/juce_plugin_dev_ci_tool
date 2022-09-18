@@ -1,5 +1,7 @@
 @echo off
+setlocal EnableExtentions
 
+pushd
 cd %~dp0
 
 where python
@@ -19,3 +21,4 @@ echo *FAILED*
 goto EOF
 
 :EOF
+popd
